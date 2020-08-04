@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link src="Robert_CurrencyConverter::js/converter.js"/>
+        <css src="Robert_CurrencyConverter::css/converter.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Robert\CurrencyConverter\Block\Form" name="currencyconverter.form" template="Robert_CurrencyConverter::form.phtml" />
+        </referenceContainer>
+    </body>
+</page>

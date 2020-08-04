@@ -1,0 +1,26 @@
+<?php /* @var $block \Robert\CurrencyConverter\Block\Form */  ?>
+<form action="<?php echo $block->getCurrencyConverterFormUrl(); ?>" method="post" id="currency-converter-form">
+    <fieldset class="fieldset">
+        <legend class="legend"><span><?php echo __('Currency Converter'); ?></span></legend><br>
+        <div class="field">
+            <label for="curency-from" class="label"><span><?php echo __('USD'); ?></span></label>
+            <div class="control">
+                <input type="text" name="currency_from" class="input-text" id="currency-from" />
+            </div>
+        </div>
+        <div class="field" id="currency-to-field">
+            <label for="curency-to" class="label"><span><?php echo __('PLN'); ?></span></label>
+            <div class="control">
+                <input type="text" readonly class="input-text" id="currency-to" />
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="<?php  echo __('Convert'); ?>">
+                <span><?php echo __('Convert'); ?></span>
+            </button>
+        </div>
+    </div>
+    <div class="errors"></div>
+</form>
